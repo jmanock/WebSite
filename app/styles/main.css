@@ -87,3 +87,98 @@ body {
     border-bottom: 0;
   }
 }
+header{
+  border:3px solid red;
+}
+.nameTag{
+  background-color:white;
+  margin-top:5%;
+  margin-left:25%;
+  width:50%;
+  height:25em;
+  padding:5%;
+  border-top:7em solid navy;
+  border-left:2px solid navy;
+  border-right: 2px solid navy;
+  border-bottom:4em solid navy;
+  border-radius:2em;
+}
+.nameTag h1{
+  text-align:center;
+  color:white;
+  margin-top:-4em;
+}
+.nameTag h4{
+  color:white;
+  text-align:center;
+  margin-top:-0.5em;
+}
+
+.name{
+  color:black;
+  font-size:13em;
+  margin:10px 0 10px;
+  white-space:nowrap;
+  overflow:hidden;
+  width:30em;
+  animation: type 40s steps(53, end);
+}
+
+@keyframes type{
+  from{
+    width: 0;
+  }
+}
+
+
+#mtg, #beerMe, #todoMvc{
+  background-color:lightgray;
+}
+
+#work{
+  text-align:center;
+}
+.group{
+  position:relative;
+  margin-bottom:45px;
+}
+input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid;
+}
+input:focus{
+  outline:none;
+}
+label{
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.5s ease all;
+}
+input:focus ~ label, input:valid ~ label{
+  top:-25px;
+  color:#999;
+}
+.bar{
+  position:relative;
+  display:block;
+  width:300px;
+}
+
+.hightlight{
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
