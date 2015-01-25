@@ -87,12 +87,16 @@ body {
     border-bottom: 0;
   }
 }
-header{
-  border:3px solid red;
+.navbar-brand{
+  font-size:2em;
+}
+
+.navbar-nav{
+  font-size:2em;
 }
 .nameTag{
   background-color:white;
-  margin-top:5%;
+  margin-top:10%;
   margin-left:25%;
   width:50%;
   height:25em;
