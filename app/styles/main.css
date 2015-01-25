@@ -87,12 +87,41 @@ body {
     border-bottom: 0;
   }
 }
-header{
-  border:3px solid red;
+ body{
+  font-family:'Quicksand', sans-serif;
 }
+
+.navbar-inverse{
+  background-color:rgb(95,95,95);
+  opacity:0.85;
+}
+
+.navbar-brand{
+  font-size:1.5em;
+}
+
+.navbar-nav{
+  font-size:2em;
+}
+.links{
+  margin-top:1em;
+}
+.links a{
+  color:orange !important;
+}
+.links a:hover{
+  text-decoration:underline !important;
+}
+.navbar-brand{
+  color:white !important;
+}
+.navbar-right a{
+  color:black !important;
+}
+
 .nameTag{
   background-color:white;
-  margin-top:5%;
+  margin-top:10%;
   margin-left:25%;
   width:50%;
   height:25em;
@@ -103,6 +132,7 @@ header{
   border-bottom:4em solid navy;
   border-radius:2em;
 }
+
 .nameTag h1{
   text-align:center;
   color:white;
@@ -115,13 +145,15 @@ header{
 }
 
 .name{
+  font-family:helvetica;
   color:black;
-  font-size:13em;
-  margin:10px 0 10px;
+  font-size:14em;
+  font-weight:bold;
+  margin:.15em;
   white-space:nowrap;
   overflow:hidden;
   width:30em;
-  animation: type 40s steps(53, end);
+  animation: type 50s steps(52, end);
 }
 
 @keyframes type{
