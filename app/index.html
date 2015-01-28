@@ -115,6 +115,7 @@
         </div>
       </div>
     </section>
+    <a href='main.html'>Main Site</a>
 
     <section class='page' id='contact'>
       <form action="">
@@ -134,9 +135,31 @@
       </form>
     </section>
   </div>
+  <form action="" id='rep-lookup'>
+    <div>
+      <label for="txt-zip">Zip Code:</label>
+      <input type="text" id='txt-zip' name='zip' required/>
+    </div>
+    <div>
+      <input type="submit" id='btn-lookup' value='Look up my reps'/>
+    </div>
+  </form>
+  <div id='rep-lookup-results'>
+    <em>When senators are found, they will be displayed here.</em>
+  </div>
   <footer>
     <p>&copy; Jon Manock | 2015</p>
   </footer>
+  <label for="zipCode">ZIP Code:</label>
+  <input type="text" class="text small" name="zipCode" id="zipCode" required />
+</div>
+<div class="f_row">
+  <label for="city">City:</label>
+  <input type="text" class="text medium" name="city" id="city" required />
+  <label for="state">State:</label>
+    <input type="text" id='state' class='text medium'/>
+
+
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -155,7 +178,59 @@
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+    <script>
+    $(document).ready(function(){
+      $('#rep-lookup').submit(function(e){
+        e.preventDefault();
+        var $results = $('#rep-lookup-results'),
+        zipcode = $('#txt-zip').val(),
+        apiKey = '94bf064ac1a14552a45386b5911fbcd4';
 
+        var requestURL='http://congress.api.sunlightfoundation.com/legislators/locate?callback=?';
+
+        $.getJSON(requestURL,{
+          'apikey':apiKey,
+          'zip':zipcode,
+        }, function(data){
+        /*  if(data.results && data.results.length > 0){
+            var mySenators = '<p>Here are your Senators:</p>';
+
+            $.each(data.results, function(i, rep){
+              if('senate' === rep.chamber.toLowerCase()){
+                mySenators += '<p>';
+                mySenators += '<a href="' + rep.contact_form +'" target=" _blank>';
+                mySenators += rep.first_name + ' ' + rep.last_name;
+                mySenators += '</a>';
+                mySenators += '</p>';
+              }
+            });
+            mySenators += '<p>Please write to them in support of this legislation.</p>';
+            $results.html(mySenators);
+          }else{
+            $results.html('<p>No senators found for zip code ' + zipCode + ' . Please try again.</p>');
+          }*/
+          if( data.results.length > 0){
+            var mySenators ='<p>Her are your Senators:</p>';
+
+            $.each(data.results, function(i, rep){
+              if('senate' === rep.chamber.toLowerCase()){
+                //$results.html(rep.first_name);
+                mySenators += rep.first_name + ' ' + rep.last_name;
+                mySenators += ' ' + rep.birthday + ' ';
+                mySenators += rep.contact_form;
+
+                console.log(rep.birthday);
+
+              }
+            })
+            $results.html(mySenators);
+          }
+        });
+
+
+      });
+    });
+    </script>
         <!-- build:js scripts/plugins.js -->
         <script src="../bower_components/bootstrap/js/affix.js"></script>
         <script src="../bower_components/bootstrap/js/alert.js"></script>
