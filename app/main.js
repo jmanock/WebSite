@@ -17,14 +17,26 @@
 //   });
 // });
 'use strict';
-// var app = angular.module("myApp", []);
-// app.controller('togaCtrl', function($scope, $http){
-//   $http.get('toga.json')
-//   .success(function(data, status, headers, config){
-//     console.log(data.Players);
-//     $scope.toga = data;
-//   })
-//   .error(function(data, status, headers, config){
-//
-//   });
-// });
+var app = angular.module('togaApp', []);
+
+app.controller('TogaCtrl', function($scope, $http){
+  $http.get('toga.json').success(function(data){
+    $scope.players = data.Players;
+    
+
+    // angular.forEach(data.Players, function(name, key){
+    //   console.log(name);
+    //   angular.forEach(value.Score, function(score, key){
+    //     //console.log(score)
+    //   })
+    //   angular.forEach(value.Date, function(date, key){
+    //     //console.log()
+    //   })
+    //
+    //
+    //
+    //
+    // });
+
+  });
+});
