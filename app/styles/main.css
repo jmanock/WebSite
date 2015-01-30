@@ -162,13 +162,34 @@ body {
   }
 }
 
-
-#mtg, #beerMe, #todoMvc{
-  background-color:lightgray;
+#work{
+  /*height:100vh;*/
+  background-color:orange;
 }
+
+#about{
+  /* background-color: #4FAAF0;  */
+  background-color:#272A33;
+  height:25em;
+  }
+
+  #about h3{
+  text-align:left;
+  text-decoration:underline;
+  font-size:3em;
+  color:darkgreen;
+  }
+
+  #about p{
+  color:white;
+  text-align:center;
+  font-size:2em;
+  }
+
 
 #work{
   text-align:center;
+  background-color:#4FAAF0;
 }
 .group{
   position:relative;
@@ -213,4 +234,8 @@ input:focus ~ label, input:valid ~ label{
   left:0;
   pointer-events:none;
   opacity:0.5;
+}
+footer{
+  text-align:center;
+  color:black;
 }
