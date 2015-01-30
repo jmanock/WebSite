@@ -168,27 +168,28 @@ body {
 }
 
 #about{
-  background-color:#4FAAF0;
-  border:1em solid gray;
+  /* background-color: #4FAAF0;  */
+  background-color:#272A33;
   height:25em;
-}
-#about h3{
+  }
+
+  #about h3{
   text-align:left;
   text-decoration:underline;
   font-size:3em;
-}
+  color:darkgreen;
+  }
 
-#about p{
+  #about p{
   color:white;
   text-align:center;
   font-size:2em;
-}
+  }
 
-#intro{
-  /*height:100vh;*/
-}
+
 #work{
   text-align:center;
+  background-color:#4FAAF0;
 }
 .group{
   position:relative;
