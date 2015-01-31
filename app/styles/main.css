@@ -87,39 +87,39 @@ body {
     border-bottom: 0;
   }
 }
- body{
+ /* body{
   font-family:'Quicksand', sans-serif;
-}
+ }
 
-.navbar-inverse{
+ .navbar-inverse{
   background-color:rgb(95,95,95);
   opacity:0.85;
-}
+ }
 
-.navbar-brand{
+ .navbar-brand{
   font-size:1.5em;
-}
+ }
 
-.navbar-nav{
+ .navbar-nav{
   font-size:2em;
-}
-.links{
+ }
+ .links{
   margin-top:1em;
-}
-.links a{
+ }
+ .links a{
   color:orange !important;
-}
-.links a:hover{
+ }
+ .links a:hover{
   text-decoration:underline !important;
-}
-.navbar-brand{
+ }
+ .navbar-brand{
   color:white !important;
-}
-.navbar-right a{
+ }
+ .navbar-right a{
   color:black !important;
-}
+ }
 
-.nameTag{
+ .nameTag{
   background-color:white;
   margin-top:10%;
   margin-left:25%;
@@ -131,20 +131,20 @@ body {
   border-right: 2px solid navy;
   border-bottom:4em solid navy;
   border-radius:2em;
-}
+ }
 
-.nameTag h1{
+ .nameTag h1{
   text-align:center;
   color:white;
   margin-top:-4em;
-}
-.nameTag h4{
+ }
+ .nameTag h4{
   color:white;
   text-align:center;
   margin-top:-0.5em;
-}
+ }
 
-.name{
+ .name{
   font-family:helvetica;
   color:black;
   font-size:14em;
@@ -154,21 +154,21 @@ body {
   overflow:hidden;
   width:30em;
   animation: type 50s steps(52, end);
-}
+ }
 
-@keyframes type{
+ @keyframes type{
   from{
     width: 0;
   }
-}
+ }
 
-#work{
-  /*height:100vh;*/
+ #work{
+  height:100vh;
   background-color:orange;
-}
+ }
 
-#about{
-  /* background-color: #4FAAF0;  */
+ #about{
+  background-color: #4FAAF0;
   background-color:#272A33;
   height:25em;
   }
@@ -187,26 +187,26 @@ body {
   }
 
 
-#work{
+ #work{
   text-align:center;
   background-color:#4FAAF0;
-}
-.group{
+ }
+ .group{
   position:relative;
   margin-bottom:45px;
-}
-input{
+ }
+ input{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
   width:300px;
   border:none;
   border-bottom:1px solid;
-}
-input:focus{
+ }
+ input:focus{
   outline:none;
-}
-label{
+ }
+ label{
   color:#999;
   font-size:18px;
   font-weight:normal;
@@ -215,18 +215,18 @@ label{
   left:5px;
   top:10px;
   transition:0.5s ease all;
-}
-input:focus ~ label, input:valid ~ label{
+ }
+ input:focus ~ label, input:valid ~ label{
   top:-25px;
   color:#999;
-}
-.bar{
+ }
+ .bar{
   position:relative;
   display:block;
   width:300px;
-}
+ }
 
-.hightlight{
+ .hightlight{
   position:absolute;
   height:60%;
   width:100px;
@@ -234,8 +234,34 @@ input:focus ~ label, input:valid ~ label{
   left:0;
   pointer-events:none;
   opacity:0.5;
-}
-footer{
+ }
+ footer{
   text-align:center;
   color:black;
-}
+ }
+ */
+
+ body{
+   background-image:url('../images/fullsize.jpg');
+   background-repeat:no-repeat;
+   background-size:100%;
+ }
+ h2{
+   text-align:center;
+   color:white;
+ }
+
+ @keyframes animatedBackground{
+   from{background-position:0 0;}
+   to{background-position:100% 0;}
+ }
+ /* #area{
+   width:100%;
+   height:10em;
+
+   background-image:url('../images/large.jpg');
+   background-position:0px 0px;
+   background-repeat: repeat-x;
+   opacity:0.4;
+   animation:animatedBackground 40s linear infinite;
+ } */
