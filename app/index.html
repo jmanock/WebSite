@@ -190,8 +190,9 @@
 
         $.getJSON(requestURL,{
           'apikey':apiKey,
-          'zip':zipcode,
+          'zip':6164,
         }, function(data){
+          console.log(data)
         /*  if(data.results && data.results.length > 0){
             var mySenators = '<p>Here are your Senators:</p>';
 
@@ -247,7 +248,7 @@
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
+      <!--   <script src="scripts/main.js"></script> -->
         <!-- endbuild -->
 </body>
 </html>
