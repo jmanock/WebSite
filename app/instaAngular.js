@@ -1,48 +1,78 @@
-'use strict';
-var app = angular.module('instaApp',[]);
-app.controller('instaCtrl', function($scope, $http){
-//   var url = 'https://api.instagram.com/v1/medai/search?';
-//   $http({
-//     url:url,
-//     method:'GET',
-//     data:{
-//       distance:'500',
-//       client_id:'480749a31b8d4feb86e8164fbfda1f45'
-//     },
-//     dataType:'jsonp',
-//     success:function(result){
-//       console.log(result);
-//     }
-//   });
-var apiKey = '94bf064ac1a14552a45386b5911fbcd4';
-var zipcode = '61614';
-// var url = 'http://congress.api.sunlightfoundation.com/legislators/locate?callback=?';
-$http({
-  url:'toga.json',
-  method:'GET',
-  data:{
+/* Works getting the links from redditt's home page */
+// var request = require('request'),
+// cheerio = require('cheerio'),
+// urls = [],
+// site = 'http://reddit.com';
+// request(site, function(err, resp, body){
+//   if(!err && resp.statusCode == 200){
+//     var $ = cheerio.load(body);
+//     // $('a.title', '#siteTable').each(function(){
+//     //   var url = this.attr('href');
+//     //   urls.push(url);
+//     $('a.title', '#siteTable').each(function(){
+//       var url = $(this).attr('href');
+//       urls.push(url);
+//     });
+//     console.log(urls.length);
+//
+//   }
+// });
+
+/* WORKS MAKEING A LEADERBOARD THREW YAHOO */
+var request = require('request'),
+express = require('express'),
+cheerio = require('cheerio'),
+fs = require('fs'),
+app = express(),
+players = [],
+total = [],
+final = {},
+site = 'http://www.sports.yahoo.com/golf/pga/leaderboard';
+
+request(site, function(err, resp, body){
+  if(!err && resp.statusCode == 200){
+    var $ = cheerio.load(body);
+    $('td.player', '#leaderboardtable').each(function(){
+      // $('td.total','#leaderboardtable' ).each(function(){
+      //
+      // })
+      var pName = $(this).text().trim(/[\n]+/g,'');
+      players.push(pName);
+    });
+
+    $('td.total', '#leaderboardtable').each(function(){
+      var score = $(this).text().trim(/[\n]+/g,'');
+      total.push(score);
+  });
+    for(var i = 0; i < players.length; i++){
+      final[players[i]] = total[i];
+    }
+    var asJSON = JSON.stringify(final);
+    var contact = JSON.parse(asJSON);
+       console.log(contact);
 
   }
-}).success(function(data, status, headers, config){
-  $scope.data = data;
-  console.log($scope.data.Players[1].name)
-}).error(function(data, status, headers, config){
-  $scope.status = status;
+
 });
 
-
-
- });
-// $(document).ready(function(){
-//   $('#rep-lookup').submit(function(e){
-//     e.preventDefault();
-//     var $results = $('#rep-lookup-results'),
-//     zipcode = $('#txt-zip').val(),
-//     apiKey = '94bf064ac1a14552a45386b5911fbcd4';
+/* Works getting the images from reddit and storing them into a folder */
+// var request = require('request'),
+// cheerio = require('cheerio'),
+// fs = require('fs'),
+// urls = [ ];
 //
-//     var requestURL='http://congress.api.sunlightfoundation.com/legislators/locate?callback=?';
-//
-//     $.getJSON(requestURL,{
-//       'apikey':apiKey,
-//       'zip':zipcode,
-//     }, function(data){
+// request('http://www.reddit.com', function(err, resp, body){
+//   if(!err && resp.statusCode == 200){
+//     var $ = cheerio.load(body);
+//     $('a.title', '#siteTable').each(function(){
+//       var url = $(this).attr('href');
+//       if(url.indexOf('i.imgur.com')!= -1){
+//         urls.push(url);
+//       }
+//     });
+//     console.log(urls);
+//     for(var i = 0; i < urls.length; i++){
+//       request(urls[i]).pipe(fs.createWriteStream('img/' + i + '.jpg'));
+//     }
+//   }
+// });
