@@ -40,7 +40,7 @@ var app = angular.module('togaApp', []);
           for(var i = 0; i < value.Date.length; i++){
             for(var j=0; j < value.Date[i].length; j++){
               if(value.Date[i] === '01/02/15'){
-                
+                console.log(data);
               }
             }
           }
