@@ -1,44 +1,44 @@
 <!doctype html>
 <html>
     <head>
-        <title>Cat vs Mailman</title>
+        <title>Master mochi makers in Nara, Japan</title>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         <meta name="copyright" content="Copyright 2015 Imgur, Inc." />
-        <meta id="viewport" name="viewport" content="width=718, user-scalable=yes" />
-        <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/sharePlayer.css?1424479536" />
+        <meta id="viewport" name="viewport" content="width=720, user-scalable=yes" />
+        <link rel="stylesheet" type="text/css" href="//s.imgur.com/min/sharePlayer.css?1425448840" />
 
         <style type="text/css">
             #content, #video {
-                width:  718px;
+                width:  720px;
                 height: 404px;
             }
             
             #chrome, #progress {
-                width: 718px;
+                width: 720px;
             }
         </style>
         
-        <link rel="alternate" type="application/json+oembed" href="http://api.imgur.com/oembed.json?url=http://i.imgur.com/TB5Ic0Q.gifv" title="Cat vs Mailman" />
-        <link rel="alternate" type="application/xml+oembed" href="http://api.imgur.com/oembed.xml?url=http://i.imgur.com/TB5Ic0Q.gifv" title="Cat vs Mailman" />
+        <link rel="alternate" type="application/json+oembed" href="http://api.imgur.com/oembed.json?url=http://i.imgur.com/NSSDYLG.gifv" title="Master mochi makers in Nara, Japan" />
+        <link rel="alternate" type="application/xml+oembed" href="http://api.imgur.com/oembed.xml?url=http://i.imgur.com/NSSDYLG.gifv" title="Master mochi makers in Nara, Japan" />
                 
-        <link rel="canonical"                 href="http://i.imgur.com/TB5Ic0Q.gifv" />
+        <link rel="canonical"                 href="http://i.imgur.com/NSSDYLG.gifv" />
 
         <meta property="og:site_name"         content="Imgur" />
-        <meta property="og:url"               content="http://i.imgur.com/TB5Ic0Q.gifv" />
-        <meta property="og:title"             content="Cat vs Mailman" />
+        <meta property="og:url"               content="http://i.imgur.com/NSSDYLG.gifv" />
+        <meta property="og:title"             content="Master mochi makers in Nara, Japan" />
         <meta property="og:type"              content="video.other" />
         
-        <meta property="og:image"             content="http://i.imgur.com/TB5Ic0Qh.jpg" />
-        <meta property="og:image:width"       content="718" />
+        <meta property="og:image"             content="http://i.imgur.com/NSSDYLGh.jpg" />
+        <meta property="og:image:width"       content="720" />
         <meta property="og:image:height"      content="404" />
         <meta property="og:description"       content="The Internet's visual storytelling community. Explore, share, and discuss the best visual stories the Internet has to offer." />
-        <meta property="og:video"             content="http://s.imgur.com/include/flash/gifplayer.swf?imgur_video=http://i.imgur.com/TB5Ic0Q.mp4&imgur_width=718&imgur_height=404&imgur_url=http://imgur.com/TB5Ic0Q" />
-        <meta property="og:video:secure_url"  content="https://s.imgur.com/include/flash/gifplayer.swf?imgur_video=https://i.imgur.com/TB5Ic0Q.mp4&imgur_width=718&imgur_height=404&imgur_url=http://imgur.com/TB5Ic0Q" />
+        <meta property="og:video"             content="http://s.imgur.com/include/flash/gifplayer.swf?imgur_video=http://i.imgur.com/NSSDYLG.mp4&imgur_width=720&imgur_height=404&imgur_url=http://imgur.com/NSSDYLG" />
+        <meta property="og:video:secure_url"  content="https://s.imgur.com/include/flash/gifplayer.swf?imgur_video=https://i.imgur.com/NSSDYLG.mp4&imgur_width=720&imgur_height=404&imgur_url=http://imgur.com/NSSDYLG" />
         <meta property="og:video:type"        content="application/x-shockwave-flash" />
         <meta property="og:video:width"       content="500" />
         <meta property="og:video:height"      content="281" />
-        <meta property="og:video"             content="http://i.imgur.com/TB5Ic0Q.mp4" />
-        <meta property="og:video:secure_url"  content="https://i.imgur.com/TB5Ic0Q.mp4" />
+        <meta property="og:video"             content="http://i.imgur.com/NSSDYLG.mp4" />
+        <meta property="og:video:secure_url"  content="https://i.imgur.com/NSSDYLG.mp4" />
         <meta property="og:video:type"        content="video/mp4" />
         <meta property="og:video:width"       content="500" />
         <meta property="og:video:height"      content="281" />
@@ -48,25 +48,25 @@
         <meta name="twitter:domain"                     content="imgur.com" />
         <meta name="twitter:app:id:googleplay"          content="com.imgur.mobile" />
         <meta name="twitter:card"                       content="player" />
-        <meta name="twitter:title"                      content="Cat vs Mailman" />
+        <meta name="twitter:title"                      content="Master mochi makers in Nara, Japan" />
         <meta name="twitter:description"                content="The Internet's visual storytelling community. Explore, share, and discuss the best visual stories the Internet has to offer." />
-        <meta name="twitter:image"                      content="https://i.imgur.com/TB5Ic0Qh.jpg" />
-        <meta name="twitter:image:src"                  content="https://i.imgur.com/TB5Ic0Qh.jpg" />
-        <meta name="twitter:player"                     content="https://i.imgur.com/TB5Ic0Q.gifv?twitter#t" />
-        <meta name="twitter:player:width"               content="718" />
+        <meta name="twitter:image"                      content="https://i.imgur.com/NSSDYLGh.jpg" />
+        <meta name="twitter:image:src"                  content="https://i.imgur.com/NSSDYLGh.jpg" />
+        <meta name="twitter:player"                     content="https://i.imgur.com/NSSDYLG.gifv?twitter#t" />
+        <meta name="twitter:player:width"               content="720" />
         <meta name="twitter:player:height"              content="404" />
-        <meta name="twitter:player:stream"              content="https://i.imgur.com/TB5Ic0Q.mp4" />
+        <meta name="twitter:player:stream"              content="https://i.imgur.com/NSSDYLG.mp4" />
         <meta name="twitter:player:stream:content_type" content="video/mp4">
         
-        <!--[if lte IE 8]><script type="text/javascript" src="//s.imgur.com/min/iepoly.js?1424479536"></script>
+        <!--[if lte IE 8]><script type="text/javascript" src="//s.imgur.com/min/iepoly.js?1425448840"></script>
 <![endif]-->
     </head>
     <body id="body">
         <div id="content">
             <script type="text/javascript">
-                window.image        = 'TB5Ic0Q';
-                window.image_size   = '58750249';
-                window.image_width  = '718';
+                window.image        = 'NSSDYLG';
+                window.image_size   = '74920191';
+                window.image_width  = '720';
                 window.image_height = '404';
                 window.cdn_url      = '//i.imgur.com';
                     
@@ -85,25 +85,25 @@
             <script type="text/javascript">
                 var videoItem = {
                     looping:  true,
-                    width:    718,
+                    width:    720,
                     height:   404,
-                    size:     58750249,
-                    gifUrl:   '//i.imgur.com/TB5Ic0Q.gif',
+                    size:     74920191,
+                    gifUrl:   '//i.imgur.com/NSSDYLG.gif',
                     forceGif: false,
-                    hash:     'TB5Ic0Q'
+                    hash:     'NSSDYLG'
                 }
             </script>
-            <video poster="//i.imgur.com/TB5Ic0Qh.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline></video>
+            <video poster="//i.imgur.com/NSSDYLGh.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline></video>
             <div class="video-elements">
-                <source src="//i.imgur.com/TB5Ic0Q.webm" type="video/webm">
-                <source src="//i.imgur.com/TB5Ic0Q.mp4" type="video/mp4">
+                <source src="//i.imgur.com/NSSDYLG.webm" type="video/webm">
+                <source src="//i.imgur.com/NSSDYLG.mp4" type="video/mp4">
 
-                <object style="width: 718px; height: 404px" type="application/x-shockwave-flash"
-                         data="//s.imgur.com/include/flash/gifplayer.swf?imgur_video=http://i.imgur.com/TB5Ic0Q.mp4&amp;imgur_width=718&amp;imgur_height=404&amp;imgur_url=">
-                    <param name="movie" value="//s.imgur.com/include/flash/gifplayer.swf?imgur_video=http://i.imgur.com/TB5Ic0Q.mp4&imgur_width=718&imgur_height=404" />
+                <object style="width: 720px; height: 404px" type="application/x-shockwave-flash"
+                         data="//s.imgur.com/include/flash/gifplayer.swf?imgur_video=http://i.imgur.com/NSSDYLG.mp4&amp;imgur_width=720&amp;imgur_height=404&amp;imgur_url=">
+                    <param name="movie" value="//s.imgur.com/include/flash/gifplayer.swf?imgur_video=http://i.imgur.com/NSSDYLG.mp4&imgur_width=720&imgur_height=404" />
                     <param name="allowscriptaccess" value="never" />
-                    <param name="flashvars" value="height=404&amp;width=718" />
-                    <param name="width" value="718" />
+                    <param name="flashvars" value="height=404&amp;width=720" />
+                    <param name="width" value="720" />
                     <param name="height" value="404" />
                     <param name="version" value="0" />
                     <param name="scale" value="scale" />
@@ -113,7 +113,7 @@
             </div>
             <progress value="0" max="100" min="0"></progress>
             <div class="video-loader"></div>
-            <script id="scriptTB5Ic0Q" type="text/javascript" src="//s.imgur.com/min/imageViewerInline.js?1424479536"></script>
+            <script id="scriptNSSDYLG" type="text/javascript" src="//s.imgur.com/min/imageViewerInline.js?1425448840"></script>
 
         </div>
     
@@ -121,25 +121,25 @@
 
             </div>
             <script type="text/javascript">
-            var pixel_url = '//i.imgur.com/imageview.gif?a=TB5Ic0Q&r=' + encodeURIComponent(document.referrer);
+            var pixel_url = '//i.imgur.com/imageview.gif?a=NSSDYLG&r=' + encodeURIComponent(document.referrer);
             var pixel = document.createElement('img');
             pixel.src = pixel_url;
             </script>
             
             <div id="chrome">
                 <div class="icon">
-                    <a href="//imgur.com/TB5Ic0Q"><img src="//i.imgur.com/favicon.ico" /></a>
+                    <a href="//imgur.com/NSSDYLG"><img src="//i.imgur.com/favicon.ico" /></a>
                 </div>
                 <div class="imgur">
-                    <a href="//imgur.com/TB5Ic0Q">Imgur</a>
+                    <a href="//imgur.com/NSSDYLG">Imgur</a>
                 </div>
                 <div class="controls">
-                    <a href="//imgur.com/download/TB5Ic0Q">download</a>
+                    <a href="//imgur.com/download/NSSDYLG">download</a>
                 </div>
                 <div class="clear"></div>
             </div>
         </div>
-        <script type="text/javascript" src="//s.imgur.com/min/sharePlayer.js?1424479536"></script>
+        <script type="text/javascript" src="//s.imgur.com/min/sharePlayer.js?1425448840"></script>
 
     </body>
 </html>

@@ -115,28 +115,49 @@
 // });
 
 /* Make yahoo golf leaderboard into the hacker news scrapping */
+function leaderBoard(){
+
 var request = require('request');
 var cheerio = require('cheerio');
+var Firebase = require('firebase');
+var golfers = [];
 
-function leaderBoard(){
+var myFirebaseRef = new Firebase('https://toga.firebaseio.com/');
 request('http://sports.yahoo.com/golf/pga/leaderboard', function(error, response, body){
   if(!error && response.statusCode == 200){
     var $ = cheerio.load(body);
     $('td.player').each(function(i, element){
       var name = $(this).text().trim();
-      var score = $(this).next().text();
+      //golfers.push(name)
+      var score = $(this).next().text().trim();
+      var total = $(this).next().next().next().next().next().next().next().text().trim();
       if (name.length > 29){
         name = ('');
-      }
 
-      var data ={
+      }
+      var metadata = {
         Name:name,
-        Score:score
+        Score:score,
+        Total:total
       };
-      console.log(name);
+      golfers.push(metadata);
+      myFirebaseRef.set(golfers);
+      console.log(total);
+
+      //$('#leaderboard').append(name);
     });
   }
 });
 }
 leaderBoard();
-// setInterval(leaderBoard, 30000);
+setInterval(leaderBoard, 30000);
+function test(){
+  var Firebase = require('firebase');
+  var ref = new Firebase('https://toga.firebaseio.com');
+  ref.on('value', function(snapshot){
+    console.log(snapshot.val());
+  }, function(errorObject){
+    console.log('The read failed: ' + errorObject.code);
+  });
+}
+test();
